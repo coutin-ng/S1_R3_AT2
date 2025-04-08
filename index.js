@@ -1,11 +1,13 @@
-let numero = parseFloat(prompt("Insira um número:"));
+let idade = parseFloat(prompt("Insira sua idade:"));
 
-if (isNaN(numero)) {
+if (isNaN(idade) || idade<0) {
     alert("Erro: você não digitou um número válido");
-}else {
-    if (numero > 0) {
-        alert("O número é positivo!")
+} else {
+    if (idade>=18) {
+        alert("Você é maior de idade!")
     }else{
-        alert("Seu número não é positivo!")
+        alert("Você é menor de idade!")
     }
+    
+        
 }

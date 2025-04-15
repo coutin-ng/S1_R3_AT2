@@ -1,12 +1,12 @@
-let idade = parseFloat(prompt("Insira sua idade:"));
+let numero = parseFloat(prompt("Insira um número:"));
 
-if (isNaN(idade) || idade<0) {
+if (isNaN(numero)) {
     alert("Erro: você não digitou um número válido");
 } else {
-    if (idade>=18) {
-        alert("Você é maior de idade!")
+    if (numero%5 == 0) {
+        alert("O número é múltiplo de 5!");
     }else{
-        alert("Você é menor de idade!")
+        alert("O número não é múltiplo de 5!");
     }
     
         

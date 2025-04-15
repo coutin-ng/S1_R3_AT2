@@ -1,11 +1,15 @@
-let numero = parseFloat(prompt("Insira um número:"));
+let valorCompra = parseFloat(prompt("Insira o valor da sua compra:"));
 
-if (isNaN(numero)) {
+const valorDesconto = valorCompra * 0.1
+
+if (isNaN(valorCompra) || valorCompra<=0) {
     alert("Erro: você não digitou um número válido");
-}else {
-    if (numero > 0) {
-        alert("O número é positivo!")
+} else {
+    
+    if (valorCompra >= 100) {
+        alert(`O valor do seu desconto é de ${valorDesconto}`);
+        alert(`O valor da sua compra é de ${valorCompra - valorDesconto}`)
     }else{
-        alert("Seu número não é positivo!")
+        alert(`O valor da sua compra é de ${valorCompra}`);
     }
 }
